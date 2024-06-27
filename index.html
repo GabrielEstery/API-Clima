@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Previsão do Tempo</h1>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container">
+      <p>Confira a previsão do tempo para qualquer cidade do mundo!</p>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Informe o nome da cidade">
+        <button id="searchButton">Ver Previsão</button>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><button onclick="displayInfo('temperature')">Temperatura</button></li>
+          <li><button onclick="displayInfo('weather')">Clima</button></li>
+          <li><button onclick="displayInfo('windSpeed')">Velocidade do Vento</button></li>
+          <li><button onclick="displayInfo('windDirection')">Direção do Vento</button></li>
+          <li><button onclick="displayInfo('rainVolume')">Volume de Chuva</button></li>
+        </ul>
+      </nav>
+      <div id="weatherInfo" class="weather-info"></div>
+      <div id="errorMessage" class="error-message"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 Previsão do Tempo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</html>
